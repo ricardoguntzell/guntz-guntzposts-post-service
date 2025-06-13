@@ -708,3 +708,370 @@ Caused by: java.lang.ClassNotFoundException: br.com.guntz.posts.post.domain.mode
 	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
  
 13/06/2025 18:02:52 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'postId': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: :postId] 
+13/06/2025 18:09:40 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+13/06/2025 18:09:40 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:09:40 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:40 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:09:40 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:09:40 INFO  c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated... 
+13/06/2025 18:09:40 INFO  c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed. 
+13/06/2025 18:09:40 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 64187 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:09:40 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:09:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:09:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface. 
+13/06/2025 18:09:40 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:09:40 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:40 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:09:40 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:09:40 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:09:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 444 ms 
+13/06/2025 18:09:40 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:09:40 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:09:40 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:09:40 INFO  c.z.h.HikariDataSource - HikariPool-4 - Starting... 
+13/06/2025 18:09:40 INFO  c.z.h.p.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:09:40 INFO  c.z.h.HikariDataSource - HikariPool-4 - Start completed. 
+13/06/2025 18:09:40 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:09:40 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:09:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:09:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:09:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:09:41 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:09:41 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:09:41 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:41 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:09:41 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.915 seconds (process running for 506.678) 
+13/06/2025 18:09:41 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:09:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications) 
+13/06/2025 18:09:42 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:09:42 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:42 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:09:42 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:09:42 INFO  c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated... 
+13/06/2025 18:09:42 INFO  c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed. 
+13/06/2025 18:09:42 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 64187 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:09:42 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:09:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:09:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface. 
+13/06/2025 18:09:42 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:09:42 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:42 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:09:42 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:09:42 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:09:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 238 ms 
+13/06/2025 18:09:42 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:09:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:09:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:09:42 INFO  c.z.h.HikariDataSource - HikariPool-5 - Starting... 
+13/06/2025 18:09:42 INFO  c.z.h.p.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:09:42 INFO  c.z.h.HikariDataSource - HikariPool-5 - Start completed. 
+13/06/2025 18:09:42 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:09:42 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:09:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:09:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:09:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:09:43 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:09:43 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:09:43 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:09:43 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:09:43 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.532 seconds (process running for 508.668) 
+13/06/2025 18:09:43 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:13:12 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+13/06/2025 18:13:12 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:13:12 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:12 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:13:12 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:12 INFO  c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated... 
+13/06/2025 18:13:12 INFO  c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed. 
+13/06/2025 18:13:12 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 64187 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:13:12 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:13:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:13:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface. 
+13/06/2025 18:13:13 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:13:13 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:13 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:13:13 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:13:13 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:13:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 267 ms 
+13/06/2025 18:13:13 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:13:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:13:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:13:13 INFO  c.z.h.HikariDataSource - HikariPool-6 - Starting... 
+13/06/2025 18:13:13 INFO  c.z.h.p.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:13:13 INFO  c.z.h.HikariDataSource - HikariPool-6 - Start completed. 
+13/06/2025 18:13:13 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:13:13 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:13:13 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:13:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:13:13 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:13:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:13:13 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:13 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:13:13 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.653 seconds (process running for 719.017) 
+13/06/2025 18:13:13 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:13:14 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications) 
+13/06/2025 18:13:14 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:13:14 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:14 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:13:14 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:14 INFO  c.z.h.HikariDataSource - HikariPool-6 - Shutdown initiated... 
+13/06/2025 18:13:14 INFO  c.z.h.HikariDataSource - HikariPool-6 - Shutdown completed. 
+13/06/2025 18:13:14 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 64187 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:13:14 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:13:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:13:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface. 
+13/06/2025 18:13:15 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:13:15 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:15 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:13:15 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:13:15 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:13:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 248 ms 
+13/06/2025 18:13:15 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:13:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:13:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:13:15 INFO  c.z.h.HikariDataSource - HikariPool-7 - Starting... 
+13/06/2025 18:13:15 INFO  c.z.h.p.HikariPool - HikariPool-7 - Added connection conn60: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:13:15 INFO  c.z.h.HikariDataSource - HikariPool-7 - Start completed. 
+13/06/2025 18:13:15 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:13:15 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:13:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:13:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:13:15 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:13:15 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:13:15 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:15 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:13:15 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.769 seconds (process running for 721.239) 
+13/06/2025 18:13:15 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:13:55 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (1 addition, 0 deletions, 2 modifications) 
+13/06/2025 18:13:55 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:13:55 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:55 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:13:55 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:55 INFO  c.z.h.HikariDataSource - HikariPool-7 - Shutdown initiated... 
+13/06/2025 18:13:55 INFO  c.z.h.HikariDataSource - HikariPool-7 - Shutdown completed. 
+13/06/2025 18:13:55 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 64187 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:13:55 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:13:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:13:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface. 
+13/06/2025 18:13:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:13:56 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:56 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:13:56 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:13:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:13:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms 
+13/06/2025 18:13:56 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:13:56 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:13:56 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:13:56 INFO  c.z.h.HikariDataSource - HikariPool-8 - Starting... 
+13/06/2025 18:13:56 INFO  c.z.h.p.HikariPool - HikariPool-8 - Added connection conn70: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:13:56 INFO  c.z.h.HikariDataSource - HikariPool-8 - Start completed. 
+13/06/2025 18:13:56 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:13:56 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:13:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:13:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:13:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:13:56 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:13:56 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:13:56 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:13:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:13:56 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.489 seconds (process running for 761.952) 
+13/06/2025 18:13:56 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:14:45 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:14:45 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:14:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:14:45 INFO  c.z.h.HikariDataSource - HikariPool-8 - Shutdown initiated... 
+13/06/2025 18:14:45 INFO  c.z.h.HikariDataSource - HikariPool-8 - Shutdown completed. 
+13/06/2025 18:14:48 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+13/06/2025 18:14:48 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 70239 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:14:48 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:14:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+13/06/2025 18:14:48 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+13/06/2025 18:14:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:14:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface. 
+13/06/2025 18:14:50 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:14:50 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:14:50 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:14:50 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:14:50 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:14:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2120 ms 
+13/06/2025 18:14:51 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:14:51 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+13/06/2025 18:14:51 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:14:51 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:14:51 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+13/06/2025 18:14:51 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:14:51 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+13/06/2025 18:14:51 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:14:51 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:14:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:14:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:14:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:14:53 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:14:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:14:53 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:14:53 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:14:53 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 5.592 seconds (process running for 6.273) 
+13/06/2025 18:16:57 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+13/06/2025 18:16:57 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+13/06/2025 18:16:57 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+13/06/2025 18:16:58 INFO  b.c.g.p.p.a.c.PostController - Comment Registred: 01976b27-290a-7d2a-b69f-060818650e18 
+13/06/2025 18:17:04 INFO  b.c.g.p.p.a.c.PostController - Comment Registred: 01976b27-4288-7128-9cde-d488db4e7628 
+13/06/2025 18:17:05 INFO  b.c.g.p.p.a.c.PostController - Comment Registred: 01976b27-45d1-7891-9dd1-f2f89b60871a 
+13/06/2025 18:17:06 INFO  b.c.g.p.p.a.c.PostController - Comment Registred: 01976b27-48ae-7425-a331-fb7eec4c4f73 
+13/06/2025 18:17:06 INFO  b.c.g.p.p.a.c.PostController - Comment Registred: 01976b27-4b8d-7534-a755-c56b72df974a 
+13/06/2025 18:17:22 INFO  b.c.g.p.p.a.c.PostController - Executing Listing the Comments 
+13/06/2025 18:17:22 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+ 
+13/06/2025 18:17:28 INFO  b.c.g.p.p.a.c.PostController - Executing Search the Post: 01976b27-4b8d-7534-a755-c56b72df974a 
+13/06/2025 18:17:55 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications) 
+13/06/2025 18:17:55 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:17:55 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:55 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:17:55 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:17:55 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+13/06/2025 18:17:55 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+13/06/2025 18:17:55 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 70239 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:17:55 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:17:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:17:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface. 
+13/06/2025 18:17:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:17:56 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:56 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:17:56 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:17:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:17:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 504 ms 
+13/06/2025 18:17:56 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:17:56 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:17:56 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:17:56 INFO  c.z.h.HikariDataSource - HikariPool-2 - Starting... 
+13/06/2025 18:17:56 INFO  c.z.h.p.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:17:56 INFO  c.z.h.HikariDataSource - HikariPool-2 - Start completed. 
+13/06/2025 18:17:56 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:17:56 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:17:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:17:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:17:56 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:17:56 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:17:56 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:17:56 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:17:56 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 1.029 seconds (process running for 189.211) 
+13/06/2025 18:17:56 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:17:58 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+13/06/2025 18:17:58 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:17:58 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:58 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:17:58 INFO  o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:17:58 INFO  c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated... 
+13/06/2025 18:17:58 INFO  c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed. 
+13/06/2025 18:17:58 INFO  b.c.g.p.p.PostServiceApplication - Starting PostServiceApplication using Java 17.0.15 with PID 70239 (/home/guntz/dev/projects/spring/ems/guntz-posts/microservices/post-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-posts) 
+13/06/2025 18:17:58 INFO  b.c.g.p.p.PostServiceApplication - No active profile set, falling back to 1 default profile: "default" 
+13/06/2025 18:17:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+13/06/2025 18:17:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface. 
+13/06/2025 18:17:58 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+13/06/2025 18:17:58 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:58 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+13/06/2025 18:17:58 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+13/06/2025 18:17:58 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+13/06/2025 18:17:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 278 ms 
+13/06/2025 18:17:58 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+13/06/2025 18:17:58 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+13/06/2025 18:17:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+13/06/2025 18:17:58 INFO  c.z.h.HikariDataSource - HikariPool-3 - Starting... 
+13/06/2025 18:17:58 INFO  c.z.h.p.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:file:~/guntz-posts-post-db user=SA 
+13/06/2025 18:17:58 INFO  c.z.h.HikariDataSource - HikariPool-3 - Start completed. 
+13/06/2025 18:17:58 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+13/06/2025 18:17:58 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+13/06/2025 18:17:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+13/06/2025 18:17:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:17:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+13/06/2025 18:17:59 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-posts-post-db' 
+13/06/2025 18:17:59 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+13/06/2025 18:17:59 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+13/06/2025 18:17:59 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+13/06/2025 18:17:59 INFO  b.c.g.p.p.PostServiceApplication - Started PostServiceApplication in 0.602 seconds (process running for 191.467) 
+13/06/2025 18:17:59 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+13/06/2025 18:18:01 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+13/06/2025 18:18:01 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+13/06/2025 18:18:01 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+13/06/2025 18:18:01 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.com.guntz.posts.post.api.model.PostSummaryOutput> br.com.guntz.posts.post.api.controller.PostController.create(br.com.guntz.posts.post.api.model.PostInput,org.springframework.web.util.UriComponentsBuilder): [Field error in object 'postInput' on field 'author': rejected value []; codes [NotBlank.postInput.author,NotBlank.author,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postInput.author,author]; arguments []; default message [author]]; default message [must not be blank]] ] 
+13/06/2025 18:18:16 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.com.guntz.posts.post.api.model.PostSummaryOutput> br.com.guntz.posts.post.api.controller.PostController.create(br.com.guntz.posts.post.api.model.PostInput,org.springframework.web.util.UriComponentsBuilder): [Field error in object 'postInput' on field 'body': rejected value []; codes [NotBlank.postInput.body,NotBlank.body,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postInput.body,body]; arguments []; default message [body]]; default message [must not be blank]] ] 
+13/06/2025 18:18:21 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<br.com.guntz.posts.post.api.model.PostSummaryOutput> br.com.guntz.posts.post.api.controller.PostController.create(br.com.guntz.posts.post.api.model.PostInput,org.springframework.web.util.UriComponentsBuilder): [Field error in object 'postInput' on field 'title': rejected value []; codes [NotBlank.postInput.title,NotBlank.title,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postInput.title,title]; arguments []; default message [title]]; default message [must not be blank]] ] 
+13/06/2025 18:18:24 INFO  b.c.g.p.p.a.c.PostController - Post Registred: 01976b28-79a3-74c9-b050-7726bd8f192f 
+13/06/2025 18:18:30 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'postId': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; UUID string too large] 
+13/06/2025 18:19:18 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'postId': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: :postId] 
+13/06/2025 18:19:28 INFO  b.c.g.p.p.a.c.PostController - Executing Search the Post: 01976b27-4b8d-7534-a755-c56b72df974a 
+13/06/2025 18:19:31 INFO  b.c.g.p.p.a.c.PostController - Executing Search the Post: 01976b27-4b8d-7534-a755-c56b72df974b 
+13/06/2025 18:19:31 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [br.com.guntz.posts.post.api.config.exception.PostNotFoundException] 
+13/06/2025 18:20:08 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+13/06/2025 18:20:08 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+13/06/2025 18:20:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+13/06/2025 18:20:08 INFO  c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated... 
+13/06/2025 18:20:08 INFO  c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed. 
