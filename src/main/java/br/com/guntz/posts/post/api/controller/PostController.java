@@ -1,6 +1,5 @@
 package br.com.guntz.posts.post.api.controller;
 
-import br.com.guntz.posts.post.api.config.exception.PostNotFoundException;
 import br.com.guntz.posts.post.api.model.PostInput;
 import br.com.guntz.posts.post.api.model.PostOutput;
 import br.com.guntz.posts.post.api.model.PostSummaryOutput;
@@ -31,7 +30,7 @@ public class PostController {
 
     @GetMapping
     public ResponseEntity<Page<PostSummaryOutput>> listAll(@PageableDefault Pageable pageable) {
-        log.info("Executing Listing the Comments");
+        log.info("Executing Listing the posts");
 
         var posts = postRepository.findAll(pageable)
                 .map(this::convertPostToPostSummaryOutput);
@@ -40,7 +39,7 @@ public class PostController {
     }
 
     @GetMapping("/{postId}")
-    public ResponseEntity<PostOutput> findCommentById(@PathVariable UUID postId) {
+    public ResponseEntity<PostOutput> findPostById(@PathVariable UUID postId) {
         log.info("Executing Search the Post: {}", postId);
 
         Post post = postService.getPostById(postId);
@@ -49,14 +48,14 @@ public class PostController {
     }
 
     @PostMapping
-    public ResponseEntity<PostSummaryOutput> create(@Valid @RequestBody PostInput input, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<PostOutput> create(@Valid @RequestBody PostInput input, UriComponentsBuilder uriBuilder) {
         Post postSaved = postService.save(convertToNewPost(input));
 
         var uri = uriBuilder.path("/api/posts/{postId}").buildAndExpand(postSaved.getId()).toUri();
 
         log.info("Post Registred: {}", postSaved.getId());
 
-        return ResponseEntity.created(uri).body(convertPostToPostSummaryOutput(postSaved));
+        return ResponseEntity.created(uri).body(convertPostToPostOutput(postSaved));
     }
 
     private Post convertToNewPost(PostInput input) {
@@ -70,7 +69,7 @@ public class PostController {
 
     private PostOutput convertPostToPostOutput(Post post) {
         return PostOutput.builder()
-                .id(IdGenerator.generateTimeBasedUUID())
+                .id(post.getId())
                 .title(post.getTitle())
                 .body(post.getBody())
                 .author(post.getAuthor())
@@ -81,9 +80,9 @@ public class PostController {
 
     private PostSummaryOutput convertPostToPostSummaryOutput(Post post) {
         return PostSummaryOutput.builder()
-                .id(IdGenerator.generateTimeBasedUUID())
+                .id(post.getId())
                 .title(post.getTitle())
-                .summary(post.getBody())
+                .summary(post.getSummary())
                 .author(post.getAuthor())
                 .build();
     }

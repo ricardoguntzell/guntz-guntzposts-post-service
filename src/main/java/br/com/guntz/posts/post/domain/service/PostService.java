@@ -19,6 +19,7 @@ public class PostService {
 
     @Transactional
     public Post save(Post post) {
+        post.convertBodyToSummary();
         return postRepository.save(post);
     }
 
