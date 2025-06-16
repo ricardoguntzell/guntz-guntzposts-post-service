@@ -21,3 +21,18 @@ spring:
     properties:
       hibernate:
         format_sql: 'true'
+  #RABBITMQ
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: ${RABBITMQ_DEFAULT_USER}
+    password: ${RABBITMQ_DEFAULT_PASS}
+    listener:
+      simple:
+        prefetch: 4
+        retry:
+          enabled: true
+          initial-interval: 10s
+          max-interval: 20s
+          multiplier: 2
+          max-attempts: 3

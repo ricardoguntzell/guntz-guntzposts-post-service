@@ -53,8 +53,6 @@ public class PostController {
 
         var uri = uriBuilder.path("/api/posts/{postId}").buildAndExpand(postSaved.getId()).toUri();
 
-        log.info("Post Registred: {}", postSaved.getId());
-
         return ResponseEntity.created(uri).body(convertPostToPostOutput(postSaved));
     }
 
