@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -32,7 +33,7 @@ public class Post {
 
     private Long wordCount;
 
-    private Float calculatedValue;
+    private BigDecimal calculatedValue;
 
     public void convertBodyToSummary() {
         String[] lines = getBody().split("\\r?\\n");

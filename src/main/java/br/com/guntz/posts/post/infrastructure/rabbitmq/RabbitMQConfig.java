@@ -8,11 +8,17 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Configuration
 public class RabbitMQConfig {
 
-    private static final String PROCESS_POST = "post-service.post-received.v1";
-    public static final String FONOUT_EXCHANGE_POST_RECEIVED = PROCESS_POST + ".e";
+    private static final String PROCESS_POST_RECEIVED = "post-service.post-received.v1";
+    private static final String PROCESS_POST_PROCESSING_RESULT = "post-service.post-processing-result.v1";
+    private static final String QUEUE_POST_PROCESSING_RESULT = PROCESS_POST_PROCESSING_RESULT + ".q";
+    public static final String DEAD_LETTER_QUEUE_POST_PROCESSING_RESULT = PROCESS_POST_PROCESSING_RESULT + ".dlq";
+    public static final String FONOUT_EXCHANGE_POST_RECEIVED = PROCESS_POST_RECEIVED + ".e";
 
     //text-processor-service
     private static final String QUEUE_TEXT_PROCESSOR_POST = "text-processor-service.post-processing.v1.q";
@@ -25,6 +31,25 @@ public class RabbitMQConfig {
     @Bean
     public Jackson2JsonMessageConverter jackson2JsonMessageConverter(ObjectMapper objectMapper) {
         return new Jackson2JsonMessageConverter(objectMapper);
+    }
+
+    @Bean
+    public Queue queuePostProcessingResult() {
+        Map<String, Object> args = new HashMap<>();
+        args.put("x-dead-letter-exchange", "");
+        args.put("x-dead-letter-routing-key", DEAD_LETTER_QUEUE_POST_PROCESSING_RESULT);
+
+        return QueueBuilder
+                .durable(QUEUE_POST_PROCESSING_RESULT)
+                .withArguments(args)
+                .build();
+    }
+
+    @Bean
+    public Queue deadLetterQueuePostProcessingResult() {
+        return QueueBuilder
+                .durable(DEAD_LETTER_QUEUE_POST_PROCESSING_RESULT)
+                .build();
     }
 
     public Queue queueTextProcessorPost() {

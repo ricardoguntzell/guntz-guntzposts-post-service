@@ -3,6 +3,7 @@ package br.com.guntz.posts.post.api.model;
 import lombok.Builder;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Builder
@@ -19,6 +20,6 @@ public class PostOutput {
 
     private Long wordCount;
 
-    private Float calculatedValue;
+    private BigDecimal calculatedValue;
 
 }
