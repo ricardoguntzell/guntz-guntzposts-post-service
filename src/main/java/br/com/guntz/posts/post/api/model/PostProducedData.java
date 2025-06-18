@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @Builder
 @Data
-public class PostData {
+public class PostProducedData {
 
     private UUID postId;
 

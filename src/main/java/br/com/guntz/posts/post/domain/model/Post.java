@@ -1,5 +1,6 @@
 package br.com.guntz.posts.post.domain.model;
 
+import br.com.guntz.posts.post.api.model.PostReceivedData;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -49,4 +50,8 @@ public class Post {
         setSummary(summaryConcat.toString());
     }
 
+    public void update(PostReceivedData postReceivedData) {
+        setWordCount(postReceivedData.getWordCount());
+        setCalculatedValue(postReceivedData.getCalculatedValue());
+    }
 }

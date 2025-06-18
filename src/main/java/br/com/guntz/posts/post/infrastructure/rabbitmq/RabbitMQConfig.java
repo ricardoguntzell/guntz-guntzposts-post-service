@@ -16,7 +16,7 @@ public class RabbitMQConfig {
 
     private static final String PROCESS_POST_RECEIVED = "post-service.post-received.v1";
     private static final String PROCESS_POST_PROCESSING_RESULT = "post-service.post-processing-result.v1";
-    private static final String QUEUE_POST_PROCESSING_RESULT = PROCESS_POST_PROCESSING_RESULT + ".q";
+    public static final String QUEUE_POST_PROCESSING_RESULT = PROCESS_POST_PROCESSING_RESULT + ".q";
     public static final String DEAD_LETTER_QUEUE_POST_PROCESSING_RESULT = PROCESS_POST_PROCESSING_RESULT + ".dlq";
     public static final String FONOUT_EXCHANGE_POST_RECEIVED = PROCESS_POST_RECEIVED + ".e";
 
