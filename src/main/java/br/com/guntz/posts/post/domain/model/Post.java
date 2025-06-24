@@ -42,9 +42,13 @@ public class Post {
         int index = 1;
 
         for (String line : lines) {
-            if (index <= LIMIT_NUMBER_OF_LINES) {
-                summaryConcat.append(line.concat("\n"));
+            if (index <= LIMIT_NUMBER_OF_LINES ) {
+                summaryConcat.append(line);
+                if (index <= LIMIT_NUMBER_OF_LINES - 1){
+                    summaryConcat.append("\n");
+                }
             }
+
             index++;
         }
         setSummary(summaryConcat.toString());
