@@ -11,8 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
-import static br.com.guntz.posts.post.infrastructure.rabbitmq.RabbitMQConfig.FONOUT_EXCHANGE_POST_RECEIVED;
 import static br.com.guntz.posts.post.infrastructure.rabbitmq.RabbitMQConfig.QUEUE_POST_PROCESSING_RESULT;
+import static br.com.guntz.posts.post.infrastructure.rabbitmq.RabbitMQConfig.FONOUT_EXCHANGE_TEXT_PROCESSOR_RECEIVED;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -26,8 +26,8 @@ public class PostMessagingService {
         var postData = convertPostToPostData(post);
         var routingKey = "";
 
-        rabbitTemplate.convertAndSend(FONOUT_EXCHANGE_POST_RECEIVED, routingKey, postData);
-        log.info("Post {} inserted in exchange: {}", post.getId(), FONOUT_EXCHANGE_POST_RECEIVED);
+        rabbitTemplate.convertAndSend(FONOUT_EXCHANGE_TEXT_PROCESSOR_RECEIVED, routingKey, postData);
+        log.info("Post {} inserted in exchange: {}", post.getId(), FONOUT_EXCHANGE_TEXT_PROCESSOR_RECEIVED);
     }
 
     @Transactional
